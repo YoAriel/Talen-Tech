@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const ProductFormUI = ({
   product,
   errors,
@@ -8,6 +10,15 @@ export const ProductFormUI = ({
 }) => {
   return (
     <section>
+      <header className="header">
+        <ul>
+          <li>
+            <Link to={"/"} className="home">
+              Home
+            </Link>
+          </li>
+        </ul>
+      </header>
       <form className="product-form" onSubmit={onSubmit}>
         <h2>Agregar Producto</h2>
         <div>
