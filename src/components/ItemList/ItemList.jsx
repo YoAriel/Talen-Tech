@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Item } from "../Item/Item";
+import "../ItemList/ItemList.css";
 
 export const ItemList = ({ list }) => {
   return (
@@ -11,7 +12,7 @@ export const ItemList = ({ list }) => {
           </Link>
         ))
       ) : (
-        <p>No hay productos</p>
+        <h3>No hay productos</h3>
       )}
     </>
   );

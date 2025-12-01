@@ -1,0 +1,70 @@
+/* .item-list-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+} */
+
+.container-lol {
+  margin-top: 2rem;
+}
+
+.container-lol h1 {
+  width: 100%;
+  text-align: center;
+  margin: 2rem;
+  color: goldenrod;
+}
+
+/* .item-list-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #222;
+  border-radius: 8px;
+  
+} */
+
+.item-list-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* .item-list-container h2 {
+  width: 100%;
+  text-align: center;
+  margin: 2rem;
+  color: goldenrod;
+} */
+
+.item-list-container p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-container {
+  max-width: 250px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.btn {
+  max-width: 250px;
+  justify-content: center;
+  text-align: center;
+}
+
+.total-pagar {
+  width: 100%;
+  text-align: center;
+  color: white;
+}

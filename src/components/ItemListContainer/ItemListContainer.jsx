@@ -3,19 +3,23 @@ import { ItemList } from "../ItemList/ItemList";
 import "./ItemLIstContainer.css";
 
 import { useParams } from "react-router-dom";
+import { getProducts } from "../../services/products";
 
 export const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const { categorias } = useParams();
 
   useEffect(() => {
-    fetch("/data/products.json")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("hubo un problema al buscar productos");
-        }
-        return res.json();
-      })
+    // fetch("/data/products.json")
+    //   .then((res) => {
+    //     if (!res.ok) {
+    //       throw new Error("hubo un problema al buscar productos");
+    //     }
+    //     return res.json();
+    //   })
+    //   .then((data) => setProducts(data))
+
+    getProducts(categorias)
       .then((data) => setProducts(data))
       .catch((err) => {
         console.log(err);

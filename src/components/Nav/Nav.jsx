@@ -8,6 +8,11 @@ export const Nav = () => {
 
   return (
     <nav>
+      <div>
+        <Link className="logo" to={"/"}>
+          Logo
+        </Link>
+      </div>
       <ul>
         <li>
           <Link to={"/"}>Home</Link>
@@ -19,7 +24,7 @@ export const Nav = () => {
           <Link to={"/category/salado"}>Salado</Link>
         </li>
         <li>
-          <Link>Carrito</Link>
+          <Link to={"/carrito"}>Carrito</Link>
           {getTotalItems() > 0 && (
             <span className="in-cart">{getTotalItems()}</span>
           )}
