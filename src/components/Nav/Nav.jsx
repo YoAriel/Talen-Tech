@@ -9,8 +9,8 @@ export const Nav = () => {
   return (
     <nav>
       <div>
-        <Link className="logo" to={"/"}>
-          Logo
+        <Link className="logo" to={"/admin"}>
+          Admin
         </Link>
       </div>
       <ul>
