@@ -43,12 +43,16 @@ export const ProductFormUI = ({
         </div>
         <div>
           <label>Categoría</label>
-          <input
+          {/* <input
             type="text"
             name="category"
             value={product.category}
             onChange={onChange}
-          />
+          /> */}
+          <select name="category" value={product.category} onChange={onChange}>
+            <option value="dulce">Dulce</option>
+            <option value="salado">Salado</option>
+          </select>
           {errors.category && <p className="error">{errors.category}</p>}
         </div>
         <div>
